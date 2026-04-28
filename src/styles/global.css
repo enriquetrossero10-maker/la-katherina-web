@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de colores La Katherina */
+  --color-katherina-verde: #8b9a5b;
+  --color-katherina-verde-oscuro: #5a6b3a;
+  --color-katherina-dorado: #c9a961;
+  --color-katherina-dorado-claro: #e8d4a0;
+  --color-katherina-crema: #f8f5ee;
+  --color-katherina-marfil: #faf8f3;
+  --color-katherina-negro: #1a1a1a;
+  --color-katherina-gris: #5a5a5a;
+
+  /* Tipografías */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+/* Estilos base */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-katherina-marfil);
+  color: var(--color-katherina-negro);
+  margin: 0;
+  padding: 0;
+}
+
+/* Suavizar el scroll */
+html {
+  scroll-behavior: smooth;
+}

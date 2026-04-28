@@ -1,0 +1,1448 @@
+[
+  {
+    "numero": 1,
+    "manzana": "S",
+    "superficie": 1023,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 2,
+    "manzana": "S",
+    "superficie": 728,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 3,
+    "manzana": "S",
+    "superficie": 769,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 4,
+    "manzana": "S",
+    "superficie": 911,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 5,
+    "manzana": "S",
+    "superficie": 922,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 6,
+    "manzana": "S",
+    "superficie": 802,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 7,
+    "manzana": "S",
+    "superficie": 897,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 8,
+    "manzana": "S",
+    "superficie": 893,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 9,
+    "manzana": "S",
+    "superficie": 901,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 10,
+    "manzana": "R",
+    "superficie": 891,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 11,
+    "manzana": "R",
+    "superficie": 594,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 12,
+    "manzana": "R",
+    "superficie": 783,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 13,
+    "manzana": "R",
+    "superficie": 781,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 14,
+    "manzana": "R",
+    "superficie": 731,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 15,
+    "manzana": "Q",
+    "superficie": 962,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 16,
+    "manzana": "Q",
+    "superficie": 749,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 17,
+    "manzana": "Q",
+    "superficie": 800,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 18,
+    "manzana": "Q",
+    "superficie": 1009,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 19,
+    "manzana": "Q",
+    "superficie": 939,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 20,
+    "manzana": "Q",
+    "superficie": 1010,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 21,
+    "manzana": "Q",
+    "superficie": 1037,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 22,
+    "manzana": "Q",
+    "superficie": 815,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 23,
+    "manzana": "Q",
+    "superficie": 910,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 24,
+    "manzana": "Q",
+    "superficie": 935,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 25,
+    "manzana": "Q",
+    "superficie": 819,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 26,
+    "manzana": "Q",
+    "superficie": 908,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 27,
+    "manzana": "P",
+    "superficie": 1087,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 28,
+    "manzana": "P",
+    "superficie": 1117,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 29,
+    "manzana": "P",
+    "superficie": 632,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 30,
+    "manzana": "P",
+    "superficie": 902,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 31,
+    "manzana": "P",
+    "superficie": 813,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 32,
+    "manzana": "P",
+    "superficie": 740,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 33,
+    "manzana": "P",
+    "superficie": 740,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 34,
+    "manzana": "O",
+    "superficie": 1110,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 35,
+    "manzana": "O",
+    "superficie": 1162,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 36,
+    "manzana": "O",
+    "superficie": 896,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 37,
+    "manzana": "O",
+    "superficie": 887,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 38,
+    "manzana": "O",
+    "superficie": 873,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 39,
+    "manzana": "O",
+    "superficie": 752,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 40,
+    "manzana": "O",
+    "superficie": 586,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 41,
+    "manzana": "O",
+    "superficie": 862,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 42,
+    "manzana": "O",
+    "superficie": 891,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 43,
+    "manzana": "O",
+    "superficie": 391,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 44,
+    "manzana": "O",
+    "superficie": 768,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 45,
+    "manzana": "O",
+    "superficie": 628,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 46,
+    "manzana": "O",
+    "superficie": 608,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 47,
+    "manzana": "O",
+    "superficie": 612,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 48,
+    "manzana": "O",
+    "superficie": 2125,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 49,
+    "manzana": "O",
+    "superficie": 814,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 50,
+    "manzana": "O",
+    "superficie": 645,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 51,
+    "manzana": "O",
+    "superficie": 549,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 52,
+    "manzana": "O",
+    "superficie": 791,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 53,
+    "manzana": "O",
+    "superficie": 668,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 54,
+    "manzana": "O",
+    "superficie": 706,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 55,
+    "manzana": "O",
+    "superficie": 783,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 56,
+    "manzana": "O",
+    "superficie": 605,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 57,
+    "manzana": "O",
+    "superficie": 623,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 58,
+    "manzana": "O",
+    "superficie": 711,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 59,
+    "manzana": "O",
+    "superficie": 1031,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 60,
+    "manzana": "L",
+    "superficie": 880,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 61,
+    "manzana": "L",
+    "superficie": 694,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 62,
+    "manzana": "L",
+    "superficie": 904,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 63,
+    "manzana": "L",
+    "superficie": 1031,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 64,
+    "manzana": "L",
+    "superficie": 1045,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 65,
+    "manzana": "L",
+    "superficie": 1097,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 66,
+    "manzana": "M",
+    "superficie": 877,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 67,
+    "manzana": "M",
+    "superficie": 892,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 68,
+    "manzana": "M",
+    "superficie": 998,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 69,
+    "manzana": "M",
+    "superficie": 760,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 70,
+    "manzana": "M",
+    "superficie": 731,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 71,
+    "manzana": "M",
+    "superficie": 528,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 72,
+    "manzana": "M",
+    "superficie": 936,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 73,
+    "manzana": "N",
+    "superficie": 921,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 74,
+    "manzana": "N",
+    "superficie": 920,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 75,
+    "manzana": "N",
+    "superficie": 920,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 76,
+    "manzana": "N",
+    "superficie": 920,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 77,
+    "manzana": "N",
+    "superficie": 920,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 78,
+    "manzana": "N",
+    "superficie": 920,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 79,
+    "manzana": "N",
+    "superficie": 921,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 80,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 81,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 82,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 83,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 84,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 85,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 86,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 87,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 88,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 89,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 90,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 91,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 92,
+    "manzana": "K",
+    "superficie": 736,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 93,
+    "manzana": "J",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 94,
+    "manzana": "J",
+    "superficie": 749,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 95,
+    "manzana": "J",
+    "superficie": 905,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 96,
+    "manzana": "J",
+    "superficie": 778,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 97,
+    "manzana": "J",
+    "superficie": 778,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 98,
+    "manzana": "I",
+    "superficie": 685,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 99,
+    "manzana": "I",
+    "superficie": 568,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 100,
+    "manzana": "I",
+    "superficie": 614,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 101,
+    "manzana": "I",
+    "superficie": 631,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 102,
+    "manzana": "I",
+    "superficie": 700,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 103,
+    "manzana": "I",
+    "superficie": 700,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 104,
+    "manzana": "I",
+    "superficie": 700,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 105,
+    "manzana": "I",
+    "superficie": 738,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 106,
+    "manzana": "I",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 107,
+    "manzana": "I",
+    "superficie": 685,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 108,
+    "manzana": "V",
+    "superficie": 937,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 109,
+    "manzana": "V",
+    "superficie": 826,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 110,
+    "manzana": "V",
+    "superficie": 838,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 111,
+    "manzana": "V",
+    "superficie": 1426,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 112,
+    "manzana": "V",
+    "superficie": 1109,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 113,
+    "manzana": "V",
+    "superficie": 991,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 114,
+    "manzana": "V",
+    "superficie": 950,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 115,
+    "manzana": "V",
+    "superficie": 916,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 116,
+    "manzana": "V",
+    "superficie": 916,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 117,
+    "manzana": "V",
+    "superficie": 1471,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 118,
+    "manzana": "U",
+    "superficie": 927,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 119,
+    "manzana": "U",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 120,
+    "manzana": "U",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 121,
+    "manzana": "U",
+    "superficie": 928,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 122,
+    "manzana": "U",
+    "superficie": 928,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 123,
+    "manzana": "U",
+    "superficie": 4663,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 124,
+    "manzana": "T",
+    "superficie": 727,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 125,
+    "manzana": "T",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 126,
+    "manzana": "T",
+    "superficie": 936,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 127,
+    "manzana": "T",
+    "superficie": 939,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 128,
+    "manzana": "T",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 129,
+    "manzana": "T",
+    "superficie": 1126,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 130,
+    "manzana": "K",
+    "superficie": 727,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 131,
+    "manzana": "K",
+    "superficie": 728,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 132,
+    "manzana": "K",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 133,
+    "manzana": "K",
+    "superficie": 728,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 134,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 135,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 136,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 137,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 138,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 139,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 140,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 141,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 142,
+    "manzana": "H",
+    "superficie": 759,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 143,
+    "manzana": "E",
+    "superficie": 750,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 144,
+    "manzana": "E",
+    "superficie": 728,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 145,
+    "manzana": "E",
+    "superficie": 1106,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 146,
+    "manzana": "E",
+    "superficie": 975,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 147,
+    "manzana": "E",
+    "superficie": 879,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 148,
+    "manzana": "E",
+    "superficie": 999,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 149,
+    "manzana": "E",
+    "superficie": 998,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 150,
+    "manzana": "E",
+    "superficie": 1175,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 151,
+    "manzana": "E",
+    "superficie": 928,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 152,
+    "manzana": "E",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 153,
+    "manzana": "E",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 154,
+    "manzana": "E",
+    "superficie": 856,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 155,
+    "manzana": "E",
+    "superficie": 967,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 156,
+    "manzana": "E",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 157,
+    "manzana": "E",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 158,
+    "manzana": "E",
+    "superficie": 1276,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 159,
+    "manzana": "E",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 160,
+    "manzana": "E",
+    "superficie": 1275,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 161,
+    "manzana": "C",
+    "superficie": 1248,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 162,
+    "manzana": "C",
+    "superficie": 1175,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 163,
+    "manzana": "C",
+    "superficie": 1153,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 164,
+    "manzana": "C",
+    "superficie": 1118,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 165,
+    "manzana": "C",
+    "superficie": 1118,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 166,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 167,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 168,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 169,
+    "manzana": "C",
+    "superficie": 928,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 170,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 171,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 172,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 173,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 174,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 175,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 176,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 177,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 178,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 179,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 180,
+    "manzana": "C",
+    "superficie": 853,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 181,
+    "manzana": "C",
+    "superficie": 1737,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 182,
+    "manzana": "F",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 183,
+    "manzana": "F",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 184,
+    "manzana": "F",
+    "superficie": 728,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 185,
+    "manzana": "F",
+    "superficie": 1326,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 186,
+    "manzana": "F",
+    "superficie": 1106,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 187,
+    "manzana": "F",
+    "superficie": 1212,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 188,
+    "manzana": "F",
+    "superficie": 975,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 189,
+    "manzana": "F",
+    "superficie": 879,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 190,
+    "manzana": "F",
+    "superficie": 999,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 191,
+    "manzana": "F",
+    "superficie": 998,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 192,
+    "manzana": "F",
+    "superficie": 1175,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 193,
+    "manzana": "F",
+    "superficie": 928,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 194,
+    "manzana": "F",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 195,
+    "manzana": "F",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 196,
+    "manzana": "F",
+    "superficie": 856,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 197,
+    "manzana": "F",
+    "superficie": 967,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 198,
+    "manzana": "F",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 199,
+    "manzana": "F",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 200,
+    "manzana": "F",
+    "superficie": 1276,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 201,
+    "manzana": "F",
+    "superficie": 729,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 202,
+    "manzana": "D",
+    "superficie": 937,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 203,
+    "manzana": "D",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 204,
+    "manzana": "D",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 205,
+    "manzana": "D",
+    "superficie": 938,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 206,
+    "manzana": "D",
+    "superficie": 1455,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 207,
+    "manzana": "D",
+    "superficie": 1438,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 208,
+    "manzana": "D",
+    "superficie": 1439,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 209,
+    "manzana": "D",
+    "superficie": 1011,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 210,
+    "manzana": "D",
+    "superficie": 1221,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 211,
+    "manzana": "D",
+    "superficie": 1153,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 212,
+    "manzana": "D",
+    "superficie": 902,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 213,
+    "manzana": "D",
+    "superficie": 800,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 214,
+    "manzana": "D",
+    "superficie": 922,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 215,
+    "manzana": "D",
+    "superficie": 922,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 216,
+    "manzana": "D",
+    "superficie": 1006,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 217,
+    "manzana": "G",
+    "superficie": 847,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 218,
+    "manzana": "G",
+    "superficie": 808,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 219,
+    "manzana": "G",
+    "superficie": 940,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 220,
+    "manzana": "G",
+    "superficie": 1228,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 221,
+    "manzana": "G",
+    "superficie": 1316,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 222,
+    "manzana": "G",
+    "superficie": 1531,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 223,
+    "manzana": "G",
+    "superficie": 1546,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 224,
+    "manzana": "G",
+    "superficie": 850,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 225,
+    "manzana": "G",
+    "superficie": 850,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 226,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 227,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 228,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 229,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 230,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 231,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 232,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 233,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 234,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 235,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 236,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 237,
+    "manzana": "B",
+    "superficie": 793,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 238,
+    "manzana": "A",
+    "superficie": 850,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 239,
+    "manzana": "A",
+    "superficie": 850,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 240,
+    "manzana": "A",
+    "superficie": 850,
+    "estado": "Disponible"
+  },
+  {
+    "numero": 241,
+    "manzana": "A",
+    "superficie": 850,
+    "estado": "Disponible"
+  }
+]
