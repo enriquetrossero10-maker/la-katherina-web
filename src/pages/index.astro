@@ -185,14 +185,87 @@ import "../styles/global.css";
 					<p class="text-katherina-dorado-claro text-xs tracking-[0.3em] uppercase mb-3">Sección</p>
 					<h2 class="font-serif text-4xl md:text-5xl text-white drop-shadow-2xl">Galería de Imágenes</h2>
 				</div>
+<!-- Galería de 17 fotos PRO -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(1)">
+                    <img src="/imagenes/foto-01.jpg" alt="La Katherina - Pórtico de entrada" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(2)">
+                    <img src="/imagenes/foto-02.jpg" alt="La Katherina - Atardecer en el muelle" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(3)">
+                    <img src="/imagenes/foto-03.jpg" alt="La Katherina - Muelle con lancha" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(4)">
+                    <img src="/imagenes/foto-04.jpg" alt="La Katherina - Laguna interna" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(5)">
+                    <img src="/imagenes/foto-05.jpg" alt="La Katherina - Cartel Lote 6" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(6)">
+                    <img src="/imagenes/foto-06.jpg" alt="La Katherina - Laguna" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(7)">
+                    <img src="/imagenes/foto-07.jpg" alt="La Katherina - Pinos jovenes" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(8)">
+                    <img src="/imagenes/foto-08.jpg" alt="La Katherina - Vista aerea drone" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(9)">
+                    <img src="/imagenes/foto-09.jpg" alt="La Katherina - Vista aerea panoramica" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(10)">
+                    <img src="/imagenes/foto-10.jpg" alt="La Katherina - Atardecer Parana" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(11)">
+                    <img src="/imagenes/foto-11.jpg" alt="La Katherina - Muelle de madera" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(12)">
+                    <img src="/imagenes/foto-12.jpg" alt="La Katherina - Calles internas" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(13)">
+                    <img src="/imagenes/foto-13.jpg" alt="La Katherina - Lancha amarrada" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(14)">
+                    <img src="/imagenes/foto-14.jpg" alt="La Katherina - Atardecer dorado" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(15)">
+                    <img src="/imagenes/foto-15.jpg" alt="La Katherina - Laguna grande" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(16)">
+                    <img src="/imagenes/foto-16.jpg" alt="La Katherina - Sol sobre el rio" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                <div class="aspect-[4/3] overflow-hidden rounded-xl cursor-pointer group" onclick="abrirLightbox(17)">
+                    <img src="/imagenes/foto-17.jpg" alt="La Katherina - Atardecer en la costa" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+            </div>
+<!-- LIGHTBOX para ver fotos en grande -->
+            <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center" onclick="cerrarLightbox()">
+                
+                <!-- Botón cerrar -->
+                <button onclick="cerrarLightbox()" class="absolute top-6 right-6 z-50 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 text-white text-2xl rounded-full transition-colors" aria-label="Cerrar">
+                    ✕
+                </button>
 
-				<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-12 text-center">
-					<div class="text-6xl mb-6">📸</div>
-					<p class="text-white text-xl mb-2 font-serif">Próximamente</p>
-					<p class="text-white/70 text-sm max-w-md mx-auto">
-						Pronto vas a ver una galería con las mejores fotos del lugar: el río, las lagunas, el atardecer y las vistas aéreas del loteo.
-					</p>
-				</div>
+                <!-- Contador de fotos -->
+                <div class="absolute top-6 left-6 z-50 px-4 py-2 bg-white/10 backdrop-blur-md text-white text-sm rounded-full">
+                    <span id="lightbox-contador">1</span> / 17
+                </div>
+
+                <!-- Flecha anterior -->
+                <button onclick="event.stopPropagation(); fotoAnterior()" class="absolute left-4 md:left-8 z-50 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 text-white text-2xl rounded-full transition-colors" aria-label="Foto anterior">
+                    ‹
+                </button>
+
+                <!-- Imagen grande -->
+                <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg" onclick="event.stopPropagation()" />
+
+                <!-- Flecha siguiente -->
+                <button onclick="event.stopPropagation(); siguienteFoto()" class="absolute right-4 md:right-8 z-50 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 text-white text-2xl rounded-full transition-colors" aria-label="Foto siguiente">
+                    ›
+                </button>
+
+            </div>
 			</div>
 
 			<!-- ========================================== -->
@@ -341,6 +414,50 @@ function mostrarVideo() {
 				}, 300);
 			}
 		}
+		// ========================================
+    // LIGHTBOX - Galeria de imagenes
+    // ========================================
+    
+    let fotoActual = 1;
+    const totalFotos = 17;
+
+    function abrirLightbox(num) {
+        fotoActual = num;
+        actualizarLightbox();
+        document.getElementById('lightbox').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarLightbox() {
+        document.getElementById('lightbox').classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    function siguienteFoto() {
+        fotoActual = fotoActual === totalFotos ? 1 : fotoActual + 1;
+        actualizarLightbox();
+    }
+
+    function fotoAnterior() {
+        fotoActual = fotoActual === 1 ? totalFotos : fotoActual - 1;
+        actualizarLightbox();
+    }
+
+    function actualizarLightbox() {
+        const numFormateado = String(fotoActual).padStart(2, '0');
+        document.getElementById('lightbox-img').src = `/imagenes/foto-${numFormateado}.jpg`;
+        document.getElementById('lightbox-contador').textContent = fotoActual;
+    }
+
+    // Atajos de teclado: flechas para navegar, Esc para cerrar
+    document.addEventListener('keydown', function(e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox && !lightbox.classList.contains('hidden')) {
+            if (e.key === 'ArrowRight') siguienteFoto();
+            if (e.key === 'ArrowLeft') fotoAnterior();
+            if (e.key === 'Escape') cerrarLightbox();
+        }
+    });
 		</script>
 	</body>
 </html>
