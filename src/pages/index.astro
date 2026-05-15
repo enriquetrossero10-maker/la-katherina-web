@@ -82,7 +82,13 @@ import "../styles/global.css";
 						alt="Brios de Amanecer Desarrolladora" 
 						class="h-20 md:h-24 w-auto drop-shadow-2xl"
 					/>
-					<p class="text-white/70 text-xs italic drop-shadow-lg">Más de 15 años de trayectoria</p>
+					<button
+                        type="button"
+                        onclick="abrirNosotros()"
+                        class="mt-2 bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white/90 hover:text-katherina-dorado-claro text-[0.65rem] tracking-[0.25em] uppercase font-semibold px-5 py-2 rounded-full transition-all duration-300 drop-shadow-lg"
+                    >
+                        ¿Quiénes Somos?
+                    </button>
 				</div>
 			</div>
 
@@ -686,5 +692,87 @@ window.cerrarMapaPlano = function() {
                 }
             }
         </style>
+	<!-- ============================================ -->
+        <!-- OVERLAY: ¿Quiénes Somos?                     -->
+        <!-- ============================================ -->
+        <div id="overlay-nosotros" class="hidden fixed inset-0 z-[9999] flex items-center justify-center p-4 md:p-8" style="background: rgba(0,0,0,0.85); backdrop-filter: blur(20px);">
+
+            <!-- Tarjeta centrada -->
+            <div class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl" style="background: #faf8f3; border: 2px solid #c9a961;">
+
+                <!-- Botón Volver arriba -->
+                <button
+                    type="button"
+                    onclick="cerrarNosotros()"
+                    class="absolute top-4 left-4 md:top-6 md:left-6 z-10 bg-katherina-verde-oscuro hover:bg-katherina-verde-olivo text-white text-xs md:text-sm tracking-widest uppercase font-semibold px-4 py-2 md:px-5 md:py-2.5 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2"
+                >
+                    ← Volver
+                </button>
+
+                <!-- Contenido principal -->
+                <div class="px-6 pt-20 pb-10 md:px-14 md:pt-24 md:pb-14">
+
+                    <!-- Título -->
+                    <div class="text-center mb-8">
+                        <p class="text-katherina-dorado text-[0.7rem] tracking-[0.3em] uppercase mb-3">Brios de Amanecer</p>
+                        <h2 class="font-serif text-4xl md:text-5xl text-katherina-verde-oscuro">¿Quiénes Somos?</h2>
+                        <div class="mt-4 mx-auto w-16 h-[2px] bg-katherina-dorado"></div>
+                    </div>
+
+                    <!-- Estadísticas destacadas -->
+                    <div class="grid grid-cols-3 gap-2 md:gap-6 mb-10 text-center">
+                        <div>
+                            <p class="font-serif text-3xl md:text-5xl text-katherina-dorado font-semibold">+15</p>
+                            <p class="text-katherina-verde-oscuro text-[0.65rem] md:text-xs tracking-widest uppercase mt-1">Años</p>
+                        </div>
+                        <div class="border-x border-katherina-dorado/30">
+                            <p class="font-serif text-3xl md:text-5xl text-katherina-dorado font-semibold">+1000</p>
+                            <p class="text-katherina-verde-oscuro text-[0.65rem] md:text-xs tracking-widest uppercase mt-1">Familias</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-3xl md:text-5xl text-katherina-dorado font-semibold">+15</p>
+                            <p class="text-katherina-verde-oscuro text-[0.65rem] md:text-xs tracking-widest uppercase mt-1">Emprendimientos</p>
+                        </div>
+                    </div>
+
+                    <!-- Texto narrativo -->
+                    <div class="space-y-5 font-serif text-katherina-verde-oscuro text-base md:text-lg leading-relaxed text-justify">
+                        <p>
+                            En <em class="text-katherina-dorado not-italic font-semibold">Bríos de Amanecer</em> somos una empresa familiar con más de <em class="text-katherina-dorado not-italic font-semibold">15 años</em> de trayectoria en el desarrollo inmobiliario de Corrientes. Detrás de cada proyecto está la <em class="text-katherina-dorado not-italic font-semibold">familia Trossero</em>: un equipo formado por padres, hijos y hermanos que trabaja todos los días con compromiso, cercanía y una visión a largo plazo.
+                        </p>
+                        <p>
+                            A lo largo de estos años desarrollamos más de <em class="text-katherina-dorado not-italic font-semibold">15 emprendimientos</em> y acompañamos a más de <em class="text-katherina-dorado not-italic font-semibold">1.000 familias</em> en la compra de su lote, consolidándonos como una de las desarrolladoras más importantes del nordeste argentino.
+                        </p>
+                        <p>
+                            Nuestra experiencia, respaldo y formación profesional nos permiten brindar seguridad y confianza en cada operación. <em class="text-katherina-dorado not-italic font-semibold">Somos abogados</em>, conocemos la importancia de hacer las cosas con seriedad y creemos que la mejor publicidad es la <em class="text-katherina-dorado not-italic font-semibold">tranquilidad de nuestros clientes y la palabra cumplida</em>.
+                        </p>
+                        <p class="text-center pt-4 italic text-lg md:text-xl">
+                            Más que vender lotes, trabajamos para desarrollar lugares donde las familias puedan <em class="text-katherina-dorado not-italic font-semibold">proyectar su futuro</em>.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Script para abrir/cerrar overlay Nosotros -->
+        <script>
+            window.abrirNosotros = function() {
+                const overlay = document.getElementById('overlay-nosotros');
+                if (overlay) {
+                    overlay.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+
+            window.cerrarNosotros = function() {
+                const overlay = document.getElementById('overlay-nosotros');
+                if (overlay) {
+                    overlay.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            };
+        </script>
+	
 	</body>
 </html>
