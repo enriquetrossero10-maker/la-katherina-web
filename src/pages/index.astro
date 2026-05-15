@@ -10,6 +10,10 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>La Katherina — Loteo a orillas del Río Paraná | Paso de la Patria, Corrientes</title>
 		<meta name="description" content="Tu lugar de paz a orillas del Río Paraná, en Paso de la Patria, Corrientes. Lotes con vista al río y lagunas. Un desarrollo de Brios de Amanecer." />
+		<!-- Leaflet CSS y JS para mapa de mensura -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.js"></script>
 	</head>
 	<body>
 		<!-- HERO: Pantalla principal con video de fondo siempre visible -->
@@ -141,33 +145,26 @@ import "../styles/global.css";
 			<!-- ========================================== -->
 			<!-- VISTA 3: PLANO DEL LOTEO -->
 			<!-- ========================================== -->
-			<div id="vista-plano" class="hidden relative z-10 px-6 py-12 max-w-5xl mx-auto w-full">
-				
-				<!-- Botón Volver arriba -->
-				<button 
-					type="button"
-					onclick="volverOpciones()"
-					class="text-white/80 hover:text-katherina-dorado-claro mb-8 text-xs tracking-widest uppercase transition-colors cursor-pointer"
-				>
-					← Volver
-				</button>
+<!-- =================================================== -->
+            <!-- VISTA 3: PLANO DEL LOTEO (FULLSCREEN)               -->
+            <!-- =================================================== -->
+            <div id="vista-plano" class="hidden">
+                <!-- Botón CERRAR grande y dorado -->
+                <button id="btn-cerrar-mapa" onclick="cerrarMapaPlano()" aria-label="Cerrar mapa">
+                    <span style="font-size: 22px; line-height: 1;">✕</span>
+                    <span>CERRAR</span>
+                </button>
 
-				<!-- Título -->
-				<div class="text-center mb-10">
-					<p class="text-katherina-dorado-claro text-xs tracking-[0.3em] uppercase mb-3">Sección</p>
-					<h2 class="font-serif text-4xl md:text-5xl text-white drop-shadow-2xl">Plano del Loteo</h2>
-				</div>
+                <!-- Indicador "Plano del Loteo" -->
+                <div id="indicador-mapa">
+                    🛰️ Plano del Loteo
+                </div>
 
-				<!-- Placeholder elegante -->
-				<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-12 text-center">
-					<div class="text-6xl mb-6">🗺️</div>
-					<p class="text-white text-xl mb-2 font-serif">Próximamente</p>
-					<p class="text-white/70 text-sm max-w-md mx-auto">
-						Pronto vas a poder ver la mensura completa con los lotes disponibles, las lagunas, el río Paraná y el pórtico de acceso.
-					</p>
-				</div>
-			</div>
-
+                <!-- Mapa fullscreen -->
+                <div class="contenedor-mapa-fullscreen">
+                    <div id="mapa-mensura"></div>
+                </div>
+            </div>
 			<!-- ========================================== -->
 			<!-- VISTA 4: IMÁGENES -->
 			<!-- ========================================== -->
@@ -459,5 +456,235 @@ function mostrarVideo() {
         }
     });
 		</script>
+<!-- ============================================ -->
+        <!-- Mapa Leaflet FULLSCREEN con mensura calibrada -->
+        <!-- ============================================ -->
+        <script>
+            let mapaLeaflet = null;
+            let mensuraOverlay = null;
+
+            // Esquinas calibradas manualmente
+            const ESQUINAS_MENSURA = {
+                topLeft:     [-27.3372623, -58.6181331],
+                topRight:    [-27.3358231, -58.6160088],
+                bottomLeft:  [-27.3491845, -58.6086595]
+            };
+
+            const CENTRO_LOTEO = [-27.3425, -58.6117];
+
+            function inicializarMapaMensura() {
+                if (mapaLeaflet !== null) {
+                    mapaLeaflet.remove();
+                    mapaLeaflet = null;
+                }
+
+                const contenedor = document.getElementById('mapa-mensura');
+                if (!contenedor) return;
+
+                mapaLeaflet = L.map('mapa-mensura', {
+                    center: CENTRO_LOTEO,
+                    zoom: 16,
+                    minZoom: 14,
+                    maxZoom: 19,
+                    zoomControl: true,
+                    scrollWheelZoom: true,
+                    attributionControl: true
+                });
+
+                L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                    attribution: 'Tiles &copy; Esri | Mensura La Katherina',
+                    maxZoom: 19
+                }).addTo(mapaLeaflet);
+
+                mensuraOverlay = L.imageOverlay.rotated(
+                    '/imagenes/mensura.png',
+                    ESQUINAS_MENSURA.topLeft,
+                    ESQUINAS_MENSURA.topRight,
+                    ESQUINAS_MENSURA.bottomLeft,
+                    { opacity: 0.85, interactive: false }
+                ).addTo(mapaLeaflet);
+
+setTimeout(() => {
+                    mapaLeaflet.invalidateSize();
+                    inyectarBotonCerrar();
+                }, 200);
+            }
+
+            // Función que cierra el mapa y vuelve al menú
+// Inyecta el botón CERRAR directamente al body (imposible de tapar)
+            function inyectarBotonCerrar() {
+                if (document.getElementById('btn-cerrar-inyectado')) return;
+
+                const btn = document.createElement('button');
+                btn.id = 'btn-cerrar-inyectado';
+                btn.innerHTML = '✕ CERRAR';
+                btn.onclick = function() {
+                    window.cerrarMapaPlano();
+                };
+
+                btn.style.cssText = 'position:fixed!important;top:20px!important;right:20px!important;z-index:2147483647!important;background:#c9a961!important;color:#1a1a1a!important;border:4px solid white!important;padding:18px 32px!important;font-size:20px!important;font-weight:bold!important;font-family:Montserrat,sans-serif!important;border-radius:50px!important;cursor:pointer!important;box-shadow:0 8px 32px rgba(0,0,0,0.6)!important;letter-spacing:1px!important;text-transform:uppercase!important;display:block!important;visibility:visible!important;opacity:1!important;';
+
+                document.body.appendChild(btn);
+            }
+
+window.cerrarMapaPlano = function() {
+                // Ocultar la sección PLANO (fullscreen)
+                const vistaPlano = document.getElementById('vista-plano');
+                if (vistaPlano) {
+                    vistaPlano.classList.add('hidden');
+                }
+
+                // Mostrar la sección de opciones (los 3 botones)
+                const vistaOpciones = document.getElementById('vista-opciones');
+                if (vistaOpciones) {
+                    vistaOpciones.classList.remove('hidden');
+                }
+
+                // Restaurar scroll del body
+                // Eliminar el botón inyectado
+                const btnInyectado = document.getElementById('btn-cerrar-inyectado');
+                if (btnInyectado) btnInyectado.remove();
+				document.body.style.overflow = '';
+
+                // Destruir el mapa para liberar memoria
+                if (mapaLeaflet) {
+                    mapaLeaflet.remove();
+                    mapaLeaflet = null;
+                    mensuraOverlay = null;
+                }
+            };
+
+            // Detecta cuando se abre la sección PLANO y la convierte en fullscreen
+            document.addEventListener('DOMContentLoaded', function() {
+                const vistaPlano = document.getElementById('vista-plano');
+                if (!vistaPlano) return;
+
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.attributeName === 'class') {
+                            const visible = !vistaPlano.classList.contains('hidden');
+                            if (visible) {
+                                // Bloquear scroll del body
+                                document.body.style.overflow = 'hidden';
+                                setTimeout(inicializarMapaMensura, 100);
+                            }
+                        }
+                    });
+                });
+                observer.observe(vistaPlano, { attributes: true });
+
+                if (!vistaPlano.classList.contains('hidden')) {
+                    document.body.style.overflow = 'hidden';
+                    setTimeout(inicializarMapaMensura, 300);
+                }
+            });
+        </script>
+
+        <!-- Estilos para el modo fullscreen del mapa -->
+        <style>
+            /* Cuando vista-plano está visible, ocupa toda la pantalla */
+            #vista-plano:not(.hidden) {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                max-width: 100vw !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                z-index: 9998 !important;
+                background: #000;
+            }
+
+            /* Ocultar elementos internos de la sección PLANO en fullscreen */
+            #vista-plano:not(.hidden) > *:not(.contenedor-mapa-fullscreen) {
+                display: none !important;
+            }
+
+            /* Contenedor fullscreen del mapa */
+            #vista-plano .contenedor-mapa-fullscreen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 9998;
+            }
+
+            #vista-plano .contenedor-mapa-fullscreen #mapa-mensura {
+                width: 100vw !important;
+                height: 100vh !important;
+                min-height: 100vh !important;
+            }
+
+            /* Botón CERRAR — grande, dorado, imposible de no ver */
+            #btn-cerrar-mapa {
+                position: fixed !important;
+                top: 24px !important;
+                right: 24px !important;
+                z-index: 999999 !important;
+                background: #c9a961 !important;
+                color: #1a1a1a !important;
+                border: 4px solid white !important;
+                padding: 18px 32px !important;
+                font-size: 20px !important;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                letter-spacing: 1px;
+                transition: all 0.2s ease;
+                text-transform: uppercase;
+            }
+
+            #btn-cerrar-mapa:hover {
+                background: #e8d4a0;
+                transform: scale(1.05);
+                box-shadow: 0 8px 32px rgba(201,169,97,0.6);
+            }
+
+            #btn-cerrar-mapa:active {
+                transform: scale(0.98);
+            }
+
+            /* Indicador de "Vista satelital" arriba a la izquierda */
+            #indicador-mapa {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 10000;
+                background: rgba(0,0,0,0.75);
+                backdrop-filter: blur(10px);
+                color: white;
+                padding: 12px 18px;
+                border-radius: 50px;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+                pointer-events: none;
+            }
+
+            /* En móvil — botones todavía más visibles */
+            @media (max-width: 768px) {
+                #btn-cerrar-mapa {
+                    top: 16px;
+                    right: 16px;
+                    padding: 12px 22px;
+                    font-size: 16px;
+                }
+                #indicador-mapa {
+                    top: 16px;
+                    left: 16px;
+                    padding: 10px 14px;
+                    font-size: 12px;
+                }
+            }
+        </style>
 	</body>
 </html>
