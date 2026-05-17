@@ -492,7 +492,7 @@ function mostrarVideo() {
                     center: CENTRO_LOTEO,
                     zoom: 16,
                     minZoom: 14,
-                    maxZoom: 19,
+                    maxZoom: 22,
                     zoomControl: true,
                     scrollWheelZoom: true,
                     attributionControl: true
@@ -500,7 +500,8 @@ function mostrarVideo() {
 
                 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
                     attribution: 'Tiles &copy; Esri | Mensura La Katherina',
-                    maxZoom: 19
+                    maxZoom: 22,
+                    maxNativeZoom: 19
                 }).addTo(mapaLeaflet);
 
                 mensuraOverlay = L.imageOverlay.rotated(
